@@ -283,103 +283,82 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Contact<br>
-            <small></small>
+            Contact
           </h1>
-          <div class="row">
-          <div class="col-lg-12 col-xs-12">
-            <!-- small box -->
-            <div class="small-box bg-yellow">
-              <div class="inner">
-  
-                <p>Sapol Kosawang<br>
-
-                  Email : sapol_kosawang@cmu.ac.th<br>
-                  
-                  Facebook : Sapol Kosawang<br>
-                  
-                  (+66) - 885-472149
-                  </p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
+          <br>        
+          <div class="container-fluid">
+            <div class="row" >
+                <div class="col-md-12">
+                    <div class="card border-info mb-3">
+                        <div class="card-header">
+                            <h3 class="card-title">Form</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="" name="myForm">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" name="Name" id="name" class="form-control" placeholder="Name...">
+                                </div>
+                                <div class="form-group">
+                                  <label for="">Sur-Name</label>
+                                  <input type="text" name="sName" id="sname" class="form-control" placeholder="Surname...">
+                              </div>
+                                <div class="form-group">
+                                  <label for="">Gender</label><br>
+                                  <input type="radio" name="gender" value="1" checked> Male
+                                  <input type="radio" name="gender" value="2" > Female 
+                                  <input type="radio" name="gender" value="3" > Other
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                  <input type="email" name="Email" id="email" class="form-control" placeholder="email@address.xxx">  
+                                </div>
+                                <div class="form-group">
+                                  <label for="">Description</label>
+                                <textarea class="form-control" id="text" rows="3" placeholder="Type here..."></textarea> 
+                              </div>
+                            </form>
+                            <button class="btn btn-primary btn-flat" id="sub">Submit</button>
+                            <button class="btn btn-primary btn-flat pull-right" id="res">Reset</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+            <br>
+            <div class="row">
+              <div class="card text-white bg-dark mb-3">
+                <div class="card-header">
+                    <h3 class="card-title">Users List</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table text-white">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer">                  
+                  <div id="chartContainer" style="height: 300px; width: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>   
         </section>
         <!-- Main content -->
-        <section class="content">
-          <div class="box box-primary">
-            <div class="box-header with-border">
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form role="form">
-              <div class="box-body">
-                <div class="form-group">
-                  <label>Subject</label>
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Message</label>
-                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <label>Gender</label>
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                  Male
-                </label>
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                  Female
-                </label>
-                <div class="form-group">
-                  <label>Phone</label>
-                  <input type="text" class="form-control" placeholder="Phone">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <!-- /.box-body -->
-
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
-          </div>
-          <!-- Default box -->
-          <div class="post">
-            <div class="user-block">
-            </div>
-            <!-- /.user-block -->
-            <!-- /.row -->
-
-            <ul class="list-inline">
-              </li>
-            </ul>
-          </div>
-                
-            <!-- /.box-footer-->
-          </div>
-          <!-- /.box -->
-            <!-- /.box-body -->
-            <div class="box-footer">
-              
-            </div>
-        </section>
+       
+      
+          
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
-    </div>
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
           <b>Version</b> 2.4.18
@@ -602,9 +581,19 @@ integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="ano
 integrity="sha256-GqCMs8eqcNJo0k1Zw3TBSve9COCvjIX45PYKJlH0urU=" crossorigin="anonymous"></script>
 
 <!-- AdminLTE App -->
-<script src="./dist/js/adminlte.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
 
-    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+<script src="contact.js"></script>
 </body>
 
 </html>
